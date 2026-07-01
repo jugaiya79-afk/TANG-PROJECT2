@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>✨TANG Chat Studio V4</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+
+<header class="hero">
+
+<h1>TANG Chat Studio</h1>
+
+<p>Create Chat Like A Pro</p>
+
+</header>
+
+<!-- PREVIEW -->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Preview</h2>
+
+<div class="badge">
+LIVE
+</div>
+
+</div>
+
+<div class="preview-box">
+
+<canvas
+id="canvas"
+width="1000"
+height="420">
+</canvas>
+
+</div>
+
+</section>
+
+<!-- CHAT -->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Chat</h2>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Viewer
+</label>
+
+<input
+type="text"
+id="viewer"
+placeholder="Nama Viewer">
+
+</div>
+
+<div class="form-group">
+
+<label>
+Chat
+</label>
+
+<textarea
+id="chat"
+placeholder="Tulis chat di sini..."></textarea>
+
+</div>
+
+<div class="form-group">
+
+<label>
+Avatar
+</label>
+
+<input
+type="file"
+id="avatar"
+accept="image/*">
+
+</div>
+
+</section>
+
+<!-- STYLE -->
+
+<section class="card">
+
+<div class="card-header">
+
+<h2>Style</h2>
+
+</div>
+
+<div class="color-row">
+
+<div class="color-item">
+
+<input
+type="color"
+id="bubbleColor"
+value="#9099aa">
+
+<span>
+Bubble
+</span>
+
+</div>
+
+<div class="color-item">
+
+<input
+type="color"
+id="viewerColor"
+value="#20e0e0">
+
+<span>
+Viewer
+</span>
+
+</div>
+
+<div class="color-item">
+
+<input
+type="color"
+id="chatColor"
+value="#ffffff">
+
+<span>
+Chat
+</span>
+
+</div>
+
+</div>
+
+<div class="slider-list">
+
+<div class="slider-item">
+
+<label>
+Font Size
+</label>
+
+<input
+type="range"
+id="fontSize"
+min="18"
+max="50"
+value="28">
+
+</div>
+
+<div class="slider-item">
+
+<label>
+Avatar Size
+</label>
+
+<input
+type="range"
+id="avatarSize"
+min="40"
+max="150"
+value="70">
+
+</div>
+
+<div class="slider-item">
+
+<label>
+Bubble Radius
+</label>
+
+<input
+type="range"
+id="radius"
+min="0"
+max="80"
+value="30">
+
+</div>
+
+<div class="slider-item">
+
+<label>
+Opacity
+</label>
+
+<input
+type="range"
+id="opacity"
+min="10"
+max="100"
+value="100">
+
+</div>
+
+</div>
+
+<div class="switch-row">
+
+<label>
+
+<input
+type="checkbox"
+id="shadow"
+checked>
+
+Shadow
+
+</label>
+
+<label>
+
+<input
+type="checkbox"
+id="gradient"
+checked>
+
+Gradient
+
+</label>
+
+</div>
+
+</section>
+
+<!-- EXPORT -->
+
+<section class="card">
+
+<div class="button-row">
+
+<button
+id="generate">
+
+Generate
+
+</button>
+
+<button
+id="download">
+
+Download
+
+</button>
+
+<button
+id="reset">
+
+Reset
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
